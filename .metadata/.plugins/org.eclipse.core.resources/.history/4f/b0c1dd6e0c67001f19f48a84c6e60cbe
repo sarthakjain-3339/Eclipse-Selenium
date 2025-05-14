@@ -1,0 +1,18 @@
+package com.Steams;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.pageobjects.Webpage;
+
+
+public class RahulShettyProject extends Webpage{
+	@Test
+	public  void test1() {
+		public List<WebElement> dropdown=driver.findElements(By.id("dropdown-class-example"));
+	}
+
+}

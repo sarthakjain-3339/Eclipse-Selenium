@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Strings_Interview_Questions.FindDuplicateinStrings&apos; to &apos;Find_Duplicate_in_Strings&apos;&#x0D;&#x0A;- Original project: &apos;Selenium_Practise&apos;&#x0D;&#x0A;- Original element: &apos;Strings_Interview_Questions.FindDuplicateinStrings&apos;&#x0D;&#x0A;- Renamed element: &apos;Strings_Interview_Questions.Find_Duplicate_in_Strings&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FindDuplicateinStrings&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Strings_Interview_Questions{FindDuplicateinStrings.java[FindDuplicateinStrings" matchStrategy="1" name="Find_Duplicate_in_Strings" qualified="false" references="true" similarDeclarations="false" stamp="1726948008581" textual="false" version="1.0"/>
+</session>

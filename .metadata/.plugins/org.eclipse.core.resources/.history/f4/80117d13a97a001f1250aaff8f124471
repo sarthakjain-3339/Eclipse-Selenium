@@ -1,0 +1,89 @@
+package Strings_Interview_Questions;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class Find_Duplicate_in_Strings {
+
+	/*
+	 * // Find a Duplicate inside a strings using core java public static void
+	 * main(String[] agrs) { String s = "AppleeApplee"; char[] chars =
+	 * s.toCharArray(); int length = chars.length; Arrays.sort(chars); for (int i =
+	 * 0; i <= length - 1; i++) { for (int j = i + 1; j <= length - 1; j++) { if
+	 * (chars[i] == chars[j]) System.out.println(chars[i]); } } }
+	 */
+	/*public static void main(String[] agrs) {
+		String s = "AppleeApplee";
+		char[] chars = s.toCharArray();
+		int length = chars.length;
+		Arrays.sort(chars);
+		char lastprinted= '\0';
+		for (int i = 0; i <
+				length-1; i++) {
+			if (chars[i] == chars[i+1] && chars[i]!=lastprinted)
+				System.out.println(chars[i]);
+			lastprinted=chars[i];
+		}*/
+
+	// Find A Duplicate with Java  and print duplicate only once 
+//	public static void main(String[] agrs) {
+//		String s = "AppleeApplee";
+//		HashSet<String> see = new HashSet<String>();
+//		HashSet<String> duplicate = new HashSet<String>();
+//		for (char c : s.toCharArray()) {
+//			if(see.contains(String.valueOf(c))) {
+//				duplicate.add(String.valueOf(c));
+//			}
+//			else {
+//				see.add(String.valueOf(c));
+//			}
+//
+//		}
+//		for (String dup : duplicate) {
+//            System.out.print(dup + " ");
+//        }
+//	}
+	
+	
+	
+	public static void main(String[] agrs) {
+		String s = "AppleeApplee";
+		HashSet<Character> see = new HashSet<Character>();
+		HashSet<Character> duplicate = new HashSet();
+		for (char c : s.toCharArray()) {
+			if(see.contains(c)) {
+				duplicate.add(c);
+			}
+			else {
+				see.add(c);
+			}
+
+		}
+		for (char dup : duplicate) {
+            System.out.print(dup + " ");
+        }
+	}
+	
+//	  public static void main(String[] args) {
+//	        String s = "AppleeApplee";
+//	        
+//	        HashSet<String> duplicate = new HashSet<>();
+//	        HashSet<Character> seen = new HashSet<>();
+//
+//	        for (char c : s.toCharArray()) {
+//	            if (seen.contains(c)) {
+//	                duplicate.add(String.valueOf(c)); // Convert char to String
+//	            } else {
+//	                seen.add(c);
+//	            }
+//	        }
+//
+//	        // Printing the duplicates
+//	        for (String dup : duplicate) {
+//	            System.out.print(dup + " ");
+//	        }
+//	    }
+
+	
+
+}

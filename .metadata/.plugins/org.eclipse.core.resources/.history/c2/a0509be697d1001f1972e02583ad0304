@@ -1,0 +1,16 @@
+package interview;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String agrs[] ) {
+		String input="Interview";
+		String s=input.toLowerCase();
+		char[] c=s.toCharArray();
+		String reverse="";
+		for(int i=0;i<c.length;i++) {
+			reverse+=s.contains(s.valueOf(i));
+		}
+		System.out.println(reverse);
+	}
+}

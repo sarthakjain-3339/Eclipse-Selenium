@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.crm.qa.util.TEstUtil&apos; to &apos;TestUtil&apos;&#x0D;&#x0A;- Original project: &apos;FreeCRMTest&apos;&#x0D;&#x0A;- Original element: &apos;com.crm.qa.util.TEstUtil&apos;&#x0D;&#x0A;- Renamed element: &apos;com.crm.qa.util.TestUtil&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TEstUtil&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.crm.qa.util{TEstUtil.java[TEstUtil" matchStrategy="1" name="TestUtil" qualified="false" references="true" similarDeclarations="false" stamp="1724698643145" textual="false" version="1.0"/>
+</session>

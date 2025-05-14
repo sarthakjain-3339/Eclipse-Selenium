@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;C\://Users//ADMIN//Downloads//chromedriver-win64 (1)//chromedriver-win64//chromedriver.exe&quot;);"/>\r\n</watchExpressions>\r\n

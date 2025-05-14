@@ -1,0 +1,24 @@
+package interview;
+
+import java.util.Scanner;
+
+/*Write a program to find if a string can be converted into a palindrome. Output 
+ * will be a boolean value based on the input
+ */
+public class Test {
+	public static void main(String agrs[]) {
+		Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        char c[]=A.toCharArray();
+        String reverse="";
+        /* Enter your code here. Print output to STDOUT. */
+        for(int i=c.length-1;i>=0;i--){
+            reverse+=A.charAt(i);
+          
+            
+           
+        }
+        System.out.println(reverse);
+      
+	}
+}

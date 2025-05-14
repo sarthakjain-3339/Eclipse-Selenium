@@ -1,0 +1,102 @@
+package com.Steams;
+
+import static org.testng.Assert.assertEquals;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.openqa.selenium.support.ui.*;
+
+public class main_test {
+	static WebDriver driver;
+
+	public static void main(String[] agrs) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:/Users/ADMIN/eclipse-selenium/Driver/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		/*
+		 * 1-Code for dropdwon when we have "select" html tag WebElement
+		 * dropdown=driver.findElement(By.xpath("//select[@id='dropdown-class-example']"
+		 * )); Select dropdown1=new Select(dropdown);
+		 * dropdown1.selectByVisibleText("Option3");
+		 */
+
+		
+		
+		/*2-code for radio button
+		List<WebElement> radiobutton = driver.findElements(By.xpath("//label//input[@name='radioButton']"));
+
+		for (WebElement a : radiobutton) {
+			if ("radio1".equals(a.getAttribute("value"))) {
+				a.click();
+			};
+			System.out.println(a.getAttribute("value"));
+           }*/
+		
+		
+		
+		//3-code for suggestion dropdown
+		/*
+		//Handle the Suggestion dropdown
+       driver.findElement(By.id("autocomplete")).sendKeys("ind");  
+       Thread.sleep(2000);
+       List<WebElement> sd= driver.findElements(By.xpath("//ul[@id='ui-id-1']/li"));
+       for(WebElement a:sd) {
+    	   if ("India".equals(a.getText())) {
+				a.click();
+				Thread.sleep(2000);
+			};
+    	   System.out.println(a.getText());    
+    	   }
+       //Handle the Suggestion dropdown with streams
+       //   sd.stream().filter(i->"India".equals(i.getText())).forEach(WebElement::click);
+        */
+		
+		/*
+		//4 verify alert 
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		
+		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Sarthak"); 
+		driver.findElement(By.id("alertbtn")).click();
+		wait.until(ExpectedConditions.alertIsPresent());
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+		
+		//waits in java : use because of synchronization problem
+		*/
+		
+		/*// table data 
+		List<WebElement> tableheader= driver.findElements(By.xpath("//table[@id='product']/tbody/tr/td"));
+		for(WebElement e:tableheader)
+			System.out.println(e.getText());*/
+		
+		//Hide and show element on a webpage 
+		Assert.assertTrue(driver.findElement(By.xpath("//input[@id='displayed-text']")).isDisplayed());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        driver.close();
+        
+        
+        
+        }
+}

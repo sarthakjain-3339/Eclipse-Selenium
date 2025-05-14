@@ -1,0 +1,22 @@
+package com.Steams;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import com.browser.BrowserOpen;
+import com.pageobjects.Webpage;
+
+
+public class RahulShettyProject extends BrowserOpen{
+	@Test
+	public  void test1() {
+		final List<WebElement> dropdown1=driver.findElements(By.id("dropdown-class-example"));
+		for(WebElement e:dropdown1) {
+			System.out.println(e);
+		}
+	}
+
+}

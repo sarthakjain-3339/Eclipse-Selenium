@@ -1,0 +1,23 @@
+package com.Steams;
+
+import org.testng.annotations.Test;
+
+import com.pageobjects.Webpage;
+
+
+public class RahulShettyProject extends Webpage{
+	@Test
+	public  void test1() {
+		try {
+		Webpage pg=new Webpage();
+//		System.out.println(pg.buttontext);
+		pg.textfield.sendKeys("Hello insd");
+		
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -8,7 +8,7 @@ import java.util.Set;
 //[3,9,3,4,-7,6,3,2]
 public class Test1 {
     public static void main(String[] args) {
-        
+        System.out.println("hi");
     }
 	
 }

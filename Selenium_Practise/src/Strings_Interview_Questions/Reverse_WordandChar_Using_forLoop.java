@@ -15,7 +15,7 @@ public class Reverse_WordandChar_Using_forLoop {
             }
             reverse = reverse + " ";
         }
-        System.out.print(reverse);
+        System.out.print(reverse);;
 
 
     }

@@ -4,8 +4,21 @@ import java.util.Arrays;
 
 public class Find_Second_Largest_Number_In_Arrays {
     public static void main(String[] args) {
-        int[] arr1={2,48,69,7,23,41,64,77};
-        Arrays.sort(arr1);
-        System.out.println(arr1[arr1.length-2]);
+        int[] arr={2,22,218,28};
+        int first=Integer.MIN_VALUE;
+        int second=Integer.MIN_VALUE;
+        if(arr.length<=2){
+            System.out.println("Invalid input");
+            return;
+        }
+        for(int num:arr){
+            if(num>first){
+               second=first;
+               first=num;
+            } else if (num>second && num!=first) {
+                second=num;
+            }
+        }
+        System.out.println(second);
     }
 }

@@ -22,6 +22,11 @@ public class Print_first_non_repeating_char {
 //				return;
 //			}
 		}
+//		Mop.Entry (Entry we have a nester interface in Map Interface )
+//		for(Map.Entry<Character, Integer> c: count.entrySet()){
+//			if(c.getValue()==1){
+//				System.out.print(c.getKey() +"="+ c.getValue());
+//			}
 //		System.out.println(mains);
 //		Set<Character> firstnonrepc=new HashSet<>();
 //		Set<Character> see=new HashSet<>();

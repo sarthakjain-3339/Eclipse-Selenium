@@ -1,32 +1,30 @@
 package Practise;
 
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 public class PractiseSelenium {
-	public static void main(String agrs[]) throws InterruptedException {
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\eclipse-selenium\\Driver\\chromedriver.exe");
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		WebDriverWait waits=new WebDriverWait(driver,Duration.ofSeconds(10));
-		WebElement radiobutton=waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='checkBoxOption2']")));
-		radiobutton.click();
-		driver.navigate().refresh();
-		
-		System.out.println(driver.manage().window().getSize());
-		Thread.sleep(2000);
+		WebDriverWait waits=new WebDriverWait(driver, Duration.ofSeconds(5));
+		driver.get("https://demo.automationtesting.in/Windows.html");
+		String title=driver.getTitle();
+		waits.until(ExpectedConditions.titleIs(title));
+		driver.findElement(By.xpath("//div[@id=\"Tabbed\"]//button")).click();
+		Set<String> windows=driver.getWindowHandles();
+		for(String s:windows){
+			driver.switchTo().newWindow(WindowType.WINDOW);
+			Thread.sleep(4000);
+		}
 		driver.quit();
-		
-		
-		
 	}
 }

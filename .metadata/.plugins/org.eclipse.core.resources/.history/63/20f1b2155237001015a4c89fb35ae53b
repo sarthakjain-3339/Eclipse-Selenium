@@ -1,0 +1,26 @@
+package interview;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.json.JsonOutput;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.sql.SQLOutput;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+//Find subarray with sum 0
+//[3,9,3,4,-7,6,3,2]
+public class Test1 {
+    public static void main(String[] args) {
+        WebDriver driver=new ChromeDriver();
+        driver.get("https://www.google.com/");
+//        WebDriverWait waits=new WebDriverWait(driver,Duration.ofSeconds(1000));
+        driver.close();
+
+    }
+
+}

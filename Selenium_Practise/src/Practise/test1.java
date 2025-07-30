@@ -1,10 +1,13 @@
 package Practise;
 
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-public class test1 {
-	public static void main(String[] agrs) {
-		
-	    
-	}
+class test{
+
+
+
+
+
+
 }
